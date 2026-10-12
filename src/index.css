@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --text-hero: clamp(4rem, 10vw, 9rem);
+  --text-sub: clamp(2rem, 5vw, 4rem);
+  --animate-lreveal: lreveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-rreveal: rreveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-treveal: treveal 1.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-breveal: breveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  @keyframes lreveal {
+    from{
+      transform: translateX(100%)
+    }
+    to{
+      transform: none
+    }
+  }
+  @keyframes rreveal {
+    from{
+      transform: translateX(-100%)
+    }
+    to{
+      transform: none
+    }
+  }
+  @keyframes treveal {
+    from{
+      transform: translateY(100%)
+    }
+    to{
+      transform: none
+    }
+  }
+  @keyframes breveal {
+    from{
+      transform: translateY(-100%)
+    }
+    to{
+      transform: none
+    }
+  }
+}
+@utility text-outline {
+  color: transparent;
+  -webkit-text-stroke: 0.02em #FCFBBE;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  background-color: #35369C;
+  background-image: radial-gradient(circle 1.2px, #24201A 100%, transparent 100%),
+                    radial-gradient(circle 1.2px, #24201A 100%, transparent 100%),
+                    radial-gradient(circle 1.2px, #24201A 100%, transparent 100%),
+                    radial-gradient(circle 1.2px, #24201A 100%, transparent 100%);
+  background-size: 6px 120px, 6px 120px, 120px 6px, 120px 6px;
+  background-position: 0 0,
+                       0 60px,
+                       0 0,
+                       60px 0;
+  animation: move-grid 1.5s linear infinite;
+}
+@keyframes move-grid {
+  from{
+    background-position: 0 0, 0 60px, 0 0, 60px 0;
+  }
+  to{
+    background-position: 6px 0, -6px 60px,0 6px, 60px -6px;
+  }
+}
+
+h1, h2, h3 {
+  font-family: "Boldonse", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, a{
+  font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
