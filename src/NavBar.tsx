@@ -4,7 +4,12 @@ const items = [
     {id: "about", label: "About"},
     {id: "contact", label: "Contact"}
 ]
-export default function NavBar({active, setActive}){
+type NavBarProps = {
+  active: string;
+  setActive: (id: string) => void;
+};
+
+export default function NavBar({active, setActive}: NavBarProps){
     return(
         <>
         <nav className="hidden md:flex fixed bottom-6 z-50 bg-[#24201a88] text-[#FCFBBE] h-12 overflow-hidden inset-x-0 mx-auto w-fit ">
