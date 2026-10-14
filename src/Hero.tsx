@@ -58,7 +58,7 @@ return (
       color={avatar}
       depth={depthMap}
       strength={0.02}
-      className="animate-treveal animate-duration-1500 absolute bottom-0 left-1/2 z-10 h-auto w-full -translate-x-1/2 md:w-[55vw] md:min-w-150"
+      className="animate-treveal z-10 animate-duration-1500 absolute bottom-0 left-1/2 z-10 h-auto w-full -translate-x-1/2 md:w-[55vw] md:min-w-150"
     />
   </header>
 )
