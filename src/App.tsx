@@ -11,10 +11,11 @@ const sections = {
   about:About,
   contact:Contact
 }
+export type SectionId = keyof typeof sections;
 
 function App() {
 
-  const [active, setActive] = useState("kiran");
+  const [active, setActive] = useState<SectionId>("kiran");
   const Section = sections[active];
 
   return (

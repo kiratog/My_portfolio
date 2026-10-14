@@ -1,12 +1,14 @@
-const items = [
+import type {SectionId} from "./App"
+
+const items: {id: SectionId; label: string}[] = [
     {id: "kiran", label: "Kiran"},
     {id: "work", label: "Work"},
     {id: "about", label: "About"},
     {id: "contact", label: "Contact"}
 ]
 type NavBarProps = {
-  active: string;
-  setActive: (id: string) => void;
+  active: SectionId;
+  setActive: (id: SectionId) => void;
 };
 
 export default function NavBar({active, setActive}: NavBarProps){
