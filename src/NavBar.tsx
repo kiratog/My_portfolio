@@ -20,7 +20,7 @@ export default function NavBar({active, setActive}){
                 ))
             }
         </nav>
-        <nav>
+        <nav className="fixed bottom-6 z-50 bg-[#24201a88] text-[#FCFBBE] h-12">
             <button><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Menu_Duo_MD"> <path id="Vector" d="M5 15H19M5 9H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></button>
         </nav>
         </>
