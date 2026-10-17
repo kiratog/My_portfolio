@@ -3,7 +3,6 @@ import Hero from "./Hero"
 import NavBar from "./NavBar";
 import Work from "./Work";
 import About from "./About";
-import Contact from "./Contact";
 import { useEffect } from 'react'
 import { preloadGroup } from './preload'
 

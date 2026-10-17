@@ -14,11 +14,8 @@ export default function Work(){
                 {
                     projects.map((project,i) => (
                         <div className='overflow-hidden'>
-                            <a
+                            <div
                             key={project.id}
-                            href={project.url}
-                            target='_blank'
-                            rel='noreferrer'
                             style={{ backgroundImage: `url(${project.image})`, animationDelay: `${i*200}ms`}}
                             className="group block overflow-hidden bg-cover bg-center aspect-square @container md:animate-rreveal animate-treveal"
                             >
@@ -48,7 +45,7 @@ export default function Work(){
                                         <a href={`${project.git}`} target='_blank' className="text-[#FCFBBE] text-sm hover:underline">learn more</a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     ))
                 }
