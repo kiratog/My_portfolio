@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import {projects} from './data'
 
 const mailto = (sub: string, body='') => `mailto:vaddekirato@gmail.com?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(body)}`
 
 export default function Work(){
+    const [shown, setShown] = useState<string | null>(null);
 
     return(
         <section className="relative min-h-screen">
@@ -17,9 +19,10 @@ export default function Work(){
                             <div
                             key={project.id}
                             style={{ backgroundImage: `url(${project.image})`, animationDelay: `${i*200}ms`}}
+                            onClick={() => setShown(shown === project.id ? null : project.id)}
                             className="group block overflow-hidden bg-cover bg-center aspect-square @container md:animate-rreveal animate-treveal"
                             >
-                                <div className='h-full flex-col justify-between bg-[#24201a8b] hidden p-5 group-hover:flex animate-rreveal'>
+                                <div className={`h-full flex-col justify-between bg-[#24201a8b] p-5 group-hover:flex animate-rreveal ${shown === project.id ?  "flex" : "hidden"}`}>
                                     <a
                                     key={project.id}
                                     href={project.url}
