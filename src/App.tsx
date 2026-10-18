@@ -5,11 +5,13 @@ import Work from "./Work";
 import About from "./About";
 import { useEffect } from 'react'
 import { preloadGroup } from './preload'
+import {Contact} from "./Contact";
 
 const sections = {
   kiran:Hero,
   work:Work,
   about:About,
+  contact:Contact,
 }
 export type SectionId = keyof typeof sections;
 
