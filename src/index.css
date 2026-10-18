@@ -4,11 +4,14 @@
   --text-hero: clamp(4rem, 10vw, 9rem);
   --text-sub: clamp(2rem, 5vw, 4rem);
   --text-header: clamp(2rem, 3vw, 2.5rem);
+  --text-body: clamp(0.75rem, 2vw, 1rem);
   --animate-lreveal: lreveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-rreveal: rreveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-treveal: treveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-breveal: breveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-hreveal: treveal 1.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-spin: spin 20s linear infinite;
+  --animate-anti-spin: spin 20s linear infinite reverse;
   @keyframes lreveal {
     from{
       transform: translateX(100%)
@@ -39,6 +42,14 @@
     }
     to{
       transform: none
+    }
+  }
+  @keyframes spin {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
     }
   }
 }

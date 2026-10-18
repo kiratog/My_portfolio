@@ -8,7 +8,7 @@ export default function Work(){
 
     return(
         <section className="relative min-h-screen">
-            <div className="flex justify-between py-13 mx-10">
+            <div className="flex justify-between py-13 mx-0 sm:mx-10">
                 <div className="overflow-hidden"><h2 className="animate-breveal text-[#FCFBBE] text-header leading-18">KIRAN</h2></div>
                 <div className="overflow-hidden"><h2 className="animate-treveal text-outline text-header leading-18">Projects</h2></div>
             </div>

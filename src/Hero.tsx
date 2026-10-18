@@ -57,7 +57,7 @@ return (
     <DepthAvatar
       color={avatar}
       depth={depthMap}
-      strength={0.02}
+      strength={0.03}
       className="animate-hreveal z-10 animate-duration-1500 absolute bottom-0 left-1/2 h-auto w-full -translate-x-1/2 md:w-[55vw] md:min-w-150"
     />
   </header>
