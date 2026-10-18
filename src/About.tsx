@@ -43,8 +43,8 @@ export default function About(){
                         </p>
                     </div>
                     <div className="flex gap-2 flex-row overflow-hidden">
-                        <button onClick={() => sendMail("Want to hire you!")} className="animate-treveal md:animate-rreveal cursor-pointer text-body text-[#FCFBBE] bg-[#7C679E] h-[clamp(2.5rem,4vw,3.25rem)] px-[clamp(1.5rem,3vw,2.5rem)]">Hire me</button>
-                        <button onClick={() => sendMail("Hello there")} className="animate-treveal md:animate-rreveal cursor-pointer text-[#FCFBBE] text-body border border-[#7C679E] h-[clamp(2.5rem,4vw,3.25rem)] px-[clamp(1.5rem,3vw,2.5rem)]">Contact me</button>
+                        <button onClick={() => sendMail("Let's build a website")} className="animate-treveal md:animate-rreveal cursor-pointer text-body text-[#FCFBBE] bg-[#7C679E] h-[clamp(2.5rem,4vw,3.25rem)] px-[clamp(1.5rem,3vw,2.5rem)]">Hire me</button>
+                        <button onClick={() => sendMail("Saying hi from your portfolio")} className="animate-treveal md:animate-rreveal cursor-pointer text-[#FCFBBE] text-body border border-[#7C679E] h-[clamp(2.5rem,4vw,3.25rem)] px-[clamp(1.5rem,3vw,2.5rem)]">Contact me</button>
                     </div>
                 </div>
                 <div className="relative overflow-hidden">

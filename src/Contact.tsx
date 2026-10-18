@@ -5,7 +5,7 @@ function sendMail(subject: string, body = "") {
 }
 
 export function Contact(){
-    sendMail("Hey");
+    sendMail("Saying hi from your portfolio");
     return(
         <h1>Hi!</h1>
     )
